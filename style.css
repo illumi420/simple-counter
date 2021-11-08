@@ -1,0 +1,89 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: monospace, arial;
+    text-align: center;
+    justify-self: center;
+}
+
+body {
+    max-height: 100vh;
+    position: relative;
+    top: 200px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-column-gap: 0px;
+    padding: 100px;
+}
+
+.grid-container>div {
+    padding: 20px 0;
+    font-size: 30px;
+}
+
+button {
+    width: 7%;
+    font-size: 25px;
+    border-radius: 50%;
+    border: none;
+    color: aliceblue;
+}
+
+#counter {
+    position: relative;
+    top: 70px;
+    width: 7%;
+    font-size: 14px;
+}
+
+#number {
+    width: 20%;
+    border: none;
+}
+
+#subtraction {
+    position: relative;
+    right: -420px;
+    background-color: rgb(180, 29, 29);
+}
+
+button#subtraction:hover {
+    background-color: rgb(250, 64, 64);
+}
+
+#addition {
+    position: relative;
+    right: 420px;
+    background-color: rgb(9, 136, 20);
+}
+
+button#addition:hover {
+    background-color: rgb(90, 197, 28);
+}
+
+
+/* Chrome, Safari, Edge, Opera */
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+/* Firefox */
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
